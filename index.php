@@ -1,3 +1,11 @@
+<?php 
+
+	//Allow the config
+	define('__CONFIG__', true);
+	//Require the config
+	require_once "inc/config.php"; 
+?> 
+
 <!DOCTYPE html> 
 <html lang="en">
 	<head>
@@ -15,38 +23,16 @@
 	<body>
 
 		<div class="uk-section uk-container"> 
-  		<div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid>
-				<form class="uk-form-stacked js-login">
+		<?php echo "Vandaag is het "; 
+		echo date("d m Y");
+		?>
 
-				    <div class="uk-margin">
-			        <label class="uk-form-label" for="form-stacked-text">Email</label>
-			        <div class="uk-form-controls">
-			            <input class="uk-input" id="form-stacked-text" type="email" required='required' placeholder="email@email.com">
-			        </div>
-			    </div>
-
-				    <div class="uk-margin">
-			        <label class="uk-form-label" for="form-stacked-text">Password</label>
-			        <div class="uk-form-controls">
-			            <input class="uk-input" id="form-stacked-text" type="password"  required='required' placeholder="">
-			        </div>
-			    </div>			    
-
-				<div class="uk-margin">
-					<button class="uk-button uk-button-default" type="submit">Login</button>
-				</div>
-
-			</form>
-
-		</div>
+	<p><a href="php-login-system/login.php">Login</a></p>
+	<p><a href="php-login-system/register.php">Registreer</a></p>
 		</div>
 
-		<!-- JQuery is required -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<?php require_once "inc/footer.php"; ?>
 
-		<!--UIkit JS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.19/js/uikit.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.19/js/uikit-icons.min.js"></script>
 
 	</body>
 </html>
