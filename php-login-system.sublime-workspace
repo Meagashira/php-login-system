@@ -35,15 +35,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.php",
-			"settings":
-			{
-				"buffer_size": 0,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -93,12 +84,13 @@
 	],
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/php-login-system/index.php",
+		"/Applications/MAMP/htdocs/grid/grid2.css",
 		"/Applications/MAMP/htdocs/grid/gridstijl.css",
 		"/Applications/MAMP/htdocs/grid/index.php",
 		"/Applications/MAMP/htdocs/grid/grid.html",
 		"/Applications/MAMP/htdocs/grid/index.css",
 		"/Applications/MAMP/htdocs/grid/grid2.html",
-		"/Applications/MAMP/htdocs/grid/grid2.css",
 		"/Applications/MAMP/htdocs/grid/README.md",
 		"/Applications/MAMP/htdocs/grid/Grid.sublime-project"
 	],
@@ -135,37 +127,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
