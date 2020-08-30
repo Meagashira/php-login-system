@@ -25,8 +25,8 @@
 			<?php echo "Vandaag is het "; 
 			echo date("d-m-Y");
 			?>	
-			<p><a href="php-login-system/login.php">Login</a></p>
-			<p><a href="php-login-system/register.php">Registreer</a></p>
+			<p><a href="/login.php">Login</a></p>
+			<p><a href="/register.php">Registreer</a></p>
 		</div>
 
 		<?php require_once "inc/footer.php"; ?>
