@@ -1,4 +1,5 @@
 <?php 
+echo 'Hello World';
 
 	//Allow the config
 	define('__CONFIG__', true);
