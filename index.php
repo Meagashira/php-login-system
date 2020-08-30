@@ -1,8 +1,8 @@
 <?php 
 
-	//Allow the config
+	//Sta de config toe
 	define('__CONFIG__', true);
-	//Require the config
+	//Require de config
 	require_once "inc/config.php"; 
 ?> 
 
@@ -21,14 +21,12 @@
 	</head>
 
 	<body>
-
 		<div class="uk-section uk-container"> 
-		<?php echo "Vandaag is het "; 
-		echo date("d m Y");
-		?>
-
-	<p><a href="php-login-system/login.php">Login</a></p>
-	<p><a href="php-login-system/register.php">Registreer</a></p>
+			<?php echo "Vandaag is het "; 
+			echo date("d-m-Y");
+			?>	
+			<p><a href="php-login-system/login.php">Login</a></p>
+			<p><a href="php-login-system/register.php">Registreer</a></p>
 		</div>
 
 		<?php require_once "inc/footer.php"; ?>

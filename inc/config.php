@@ -1,8 +1,8 @@
 <?php
 
-	// Als er geen constant is gedefinieerd genaamd __CONFIG__, laadt dit bestand. 
+	// Als er geen CONSTANT is gedefinieerd genaamd __CONFIG__, laadt dit bestand dan niet. 
 	if(!defined('__CONFIG__')) {
-	exit('You do not have a config file');
+	exit('Er is geen config bestand');
 
 	// De config is hieronder
 
