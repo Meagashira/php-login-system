@@ -11,9 +11,9 @@ class DB {
 
         try {
 
-            self::$con = new PDO( 'mysql:charset=utf8mb4;host=localhost;port=8889;dbname=login_course', 'root', 'root');
-            self::$con->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            self::$con->setAttribute( PDO::ATTR_PERSISTENT, false);
+            self::$con = new PDO( 'mysql:charset=utf8mb4;host=localhost;port=8889;dbname=login_course', 'root', 'root' );
+			self::$con->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+			self::$con->setAttribute( PDO::ATTR_PERSISTENT, false );
         } catch (PDOException $e) {
             echo "Kan niet met database verbinden"; exit;
         }

@@ -3,8 +3,7 @@
 	if(!defined('__CONFIG__')) {
         exit('Er is geen config bestand');
     }
-class Filter 
-{
+class Filter {
 	
 	/**
 	 *  @param	string	$string		String to filter before putting inside InnoDB
