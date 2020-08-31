@@ -6,6 +6,21 @@
 	require_once "inc/config.php"; 
 
 	ForceLogin();
+
+	$user_id = $_SESSION['user_id'];
+
+	$getUserInfo = $con->prepare("SELECT email, reg_time FROM users WHERE user_id = :user_id LIMIT 1");
+	$getUserInfo->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+	$getUserInfo->execute();
+
+	if($getUserInfo->rowCount() == 1) {
+// User was found
+$User = $getUserInfo->fetch(PDO::FETCH_ASSOC);
+	} else {
+		// User is not signed in...
+		header("Location: /logout.php"); exit;
+	}
+
 ?> 
 
 <!DOCTYPE html> 
@@ -25,7 +40,8 @@
 	<body>
 
 		<div class="uk-section uk-container"> 
-	Dashboard hier
+	<h2>Dashboard</h2>
+	<p>Hallo <?= $User['email'];?>, je bent geregistreerd op <?=$User['reg_time'];?></p>
 	<p><a href="logout.php">Log uit</a></p>
 		</div>
 
