@@ -24,32 +24,30 @@ $(document)
     // vanaf hier Ajax processing
     _error.hide();
 
-    $.ajax({
-        type: 'POST',
-        url: '/ajax/register.php',
-        data: dataObj,
-        dataType: 'json',
-        async: true,
-    })
+	$.ajax({
+		type: 'POST',
+		url: '/ajax/register.php',
+		data: dataObj,
+		dataType: 'json',
+		async: true,
+	}) 
     .done(function ajaxDone(data) {
         //whatever data is 
         console.log(data);
         if(data.redirect !== undefined) {
-            window.location = data.redirect;
+            // window.location = data.redirect;
         }
-        
+        alert(data.name);
     })
     .fail(function ajaxFailed(e){
+        //this failed
         console.log(e);
     })
     .always(function ajaxAlwaysDoThis(data){
-        console.log(Always);
+        // Always do w/e
+        console.log('Always');
+
     })
-
-
-    console.log(data);
-
-    alert('form was submitted');
 
     return false;
 
