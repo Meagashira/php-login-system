@@ -4,6 +4,12 @@
 	if(!defined('__CONFIG__')) {
 	exit('Er is geen config bestand');
 	}
+
+	//Sessions are always turned on
+	if(!isset($_SESSION)) {
+		session_start();
+	}
+
 	// De config is hieronder
 
 
