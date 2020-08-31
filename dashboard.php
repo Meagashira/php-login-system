@@ -26,6 +26,7 @@
 
 		<div class="uk-section uk-container"> 
 	Dashboard hier
+	<p><a href="logout.php">Log uit</a></p>
 		</div>
 
 		<?php require_once "inc/footer.php"; ?>
